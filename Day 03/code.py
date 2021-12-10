@@ -3,7 +3,7 @@ import statistics
 from statistics import mode
 
 def input_data():
-    lines = open("Day 3/input.txt")
+    lines = open("Day 03/input.txt")
     # data = [str.strip(line) for line in lines]
     data = [[int(i) for i in str.strip(line)] for line in lines]
     return np.vstack(data)

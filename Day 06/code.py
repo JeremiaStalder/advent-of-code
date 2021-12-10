@@ -1,7 +1,7 @@
 import numpy as np
 
 def input_data():
-    lines = open("Day 6/input.txt")
+    lines = open("Day 06/input.txt")
     first_line = lines.readline()
     data = list(map(int, first_line.split(',')))
     return data

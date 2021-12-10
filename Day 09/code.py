@@ -1,7 +1,7 @@
 import numpy as np
 
 def input_data():
-    lines = open("Day 9/input.txt")
+    lines = open("Day 09/input.txt")
     data = [[int(i) for i in line.strip()] for line in lines]
     return np.array(data)
 

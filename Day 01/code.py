@@ -1,7 +1,7 @@
 import math
 
 def input_data():
-    lines = open("Day 1/input.txt")
+    lines = open("Day 01/input.txt")
     # data = [str.strip(line) for line in lines]
     data = [int(line) for line in lines]
     return data

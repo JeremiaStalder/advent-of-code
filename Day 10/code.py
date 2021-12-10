@@ -110,8 +110,6 @@ def part_two(d):
             score.append(current_score)
     return statistics.median(score)
 
-   
-
 
 if __name__ == "__main__":
     d = input_data()
