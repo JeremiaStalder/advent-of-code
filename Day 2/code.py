@@ -33,5 +33,7 @@ def part_two(data):
 
 if __name__ == "__main__":
     d = input_data()
+    print("Solution part one:")
     print(part_one(d))
+    print("Solution part two:")
     print(part_two(d))

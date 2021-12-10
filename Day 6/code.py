@@ -4,10 +4,10 @@ def input_data():
     lines = open("Day 6/input.txt")
     first_line = lines.readline()
     data = list(map(int, first_line.split(',')))
-    return np.array(data)
+    return data
 
 def part_one(d):
-    days = 256
+    days = 80
     for i in range(0, days):
         current_len = len(d)
         for j in range(0, current_len):
@@ -16,13 +16,12 @@ def part_one(d):
                 d.append(8)
             else:
                 d[j] = d[j] - 1
-        print(d)
     return len(d)
 
 def part_two(d):
+    d = np.array(d)
     days = 256
     v = [0]*9
-    print(d)
     for i in range(0, 9):
         v[i] = np.count_nonzero(d == i)
     
@@ -36,6 +35,8 @@ def part_two(d):
 
 
 if __name__ == "__main__":
-    d = input_data()
-    # print(part_one(d))
+    d = input_data() 
+    print("Solution part one:")
+    print(part_one(d))
+    print("Solution part two:")
     print(part_two(d))
